@@ -1,31 +1,21 @@
-# vector-stats
-Basic implementation of arrays in C++ for processing numerical data and calculating simple statistics.
-#include <iostream>
-using namespace std;
+# 📊 Estadísticas con Vectores en C++
 
-int main() {
-    const int TAM = 5;
-    int numeros[TAM];
-    int suma = 0;
-    float promedio;
+Este es un programa sencillo desarrollado en C++ que demuestra el uso de **arreglos unidimensionales (vectores)** para procesar datos numéricos capturados desde el teclado.
 
-    cout << "Ingrese 5 numeros:" << endl;
+## 🚀 Funcionalidades
+* **Lectura de datos:** Solicita al usuario el ingreso de 5 números enteros.
+* **Almacenamiento:** Guarda los datos en un vector de tamaño fijo (`TAM = 5`).
+* **Cálculo de Suma:** Realiza la sumatoria total de los elementos ingresados.
+* **Cálculo de Promedio:** Obtiene la media aritmética utilizando *casting* a `float` para mayor precisión.
 
-    for(int i = 0; i < TAM; i++) {
-        cout << "Numero " << i + 1 << ": ";
-        cin >> numeros[i];
-        suma += numeros[i];
-    }
+## 🛠️ Tecnologías utilizadas
+* **Lenguaje:** C++
+* **IDE:** Visual Studio Code
+* **Compilador:** GCC/G++
 
-    promedio = suma / (float)TAM;
-
-    cout << "\nNumeros ingresados: ";
-    for(int i = 0; i < TAM; i++) {
-        cout << numeros[i] << " ";
-    }
-
-    cout << "\nSuma total: " << suma << endl;
-    cout << "Promedio: " << promedio << endl;
-
-    return 0;
-}
+## 📋 Ejemplo de Uso
+Al ejecutar el programa, verás algo como esto:
+1. Ingrese 5 numeros:
+2. Numero 1: 10
+3. Numero 2: 20...
+4. **Resultado:** Suma total y promedio calculado.
